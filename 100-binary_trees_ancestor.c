@@ -41,7 +41,7 @@ binary_tree_t *binary_trees_ancestor(const binary_tree_t *first,
 			aux1 = aux1->parent;
 		if (aux1 == aux2)
 			return (aux1);
-		binary_trees_ancestor(aux1, aux2);
+		return binary_trees_ancestor(aux1, aux2);
 	}
 	return (NULL);
 }
